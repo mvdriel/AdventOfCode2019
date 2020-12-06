@@ -38,7 +38,7 @@ function cut($current, $position) {
     }
 
     if ($current < $position) {
-        return $current + $size - $position;
+        $current += $size;
     }
     return $current - $position;
 }
