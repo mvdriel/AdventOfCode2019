@@ -6,9 +6,6 @@ foreach (range(0, 99) as $noun) {
         $data = file_get_contents('input');
         $data = trim($data);
 
-        // $data = '1,0,0,0,99';
-        // $data = '2,3,0,3,99';
-
         $data = explode(',', $data);
         $data[1] = $noun;
         $data[2] = $verb;
@@ -35,5 +32,3 @@ foreach (range(0, 99) as $noun) {
         }
     }
 }
-
-// 1258669

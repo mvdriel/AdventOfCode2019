@@ -1,12 +1,11 @@
 <?php
 
-$data = file_get_contents('input');
-$data = trim($data);
-$data = explode("\n", $data);
+$input = trim(file_get_contents('input'));
+$lines = explode("\n", $input);
 
 $total = 0;
-foreach ($data as $item) {
-    $total += (floor($item / 3) - 2);
+foreach ($lines as $line) {
+    $total += (floor($line / 3) - 2);
 }
 
 var_dump($total);

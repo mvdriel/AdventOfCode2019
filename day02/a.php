@@ -3,9 +3,6 @@
 $data = file_get_contents('input');
 $data = trim($data);
 
-// $data = '1,0,0,0,99';
-// $data = '2,3,0,3,99';
-
 $data = explode(',', $data);
 $data[1] = 12;
 $data[2] = 2;
@@ -27,6 +24,3 @@ while(true) {
 
     $position += 4;
 }
-
-
-// 1258669

@@ -1,12 +1,11 @@
 <?php
 
-$data = file_get_contents('input');
-$data = trim($data);
-$data = explode("\n", $data);
+$input = trim(file_get_contents('input'));
+$lines = explode("\n", $input);
 
 $total = 0;
-foreach ($data as $item) {
-    $fuel = fuel($item);
+foreach ($lines as $line) {
+    $fuel = fuel($line);
     while ($fuel > 0) {
         $total += $fuel;
         $fuel = fuel($fuel);
